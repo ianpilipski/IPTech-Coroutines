@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d92fb3dfed47e40bb955908068fa8951
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_PersistentViewDataDictionary: {instanceID: 0}
+  - TimelineSkin: {fileID: 11400000, guid: 46769ec88c6664d72a730d721a33960e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

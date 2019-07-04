@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 05486d015771049e49e096b82fb93983
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - TimelineSkin: {fileID: 11400000, guid: 46769ec88c6664d72a730d721a33960e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
