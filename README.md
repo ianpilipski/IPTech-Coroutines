@@ -139,7 +139,7 @@ IEnumerator BeginPlayCoroutine() {
 ### CoroutineRunner
 If you want to run your coroutines faster, or even create CFunc coroutines easier you can use the CoroutineRunner. This class will create a runner that ticks in edit mode and in play mode. You can create your own instances, and use any patterns you like for instatiating them.
 
-#### Singlton Pattern
+#### Singleton Pattern
 I have provided a singleton "CoroutineUtility". It wraps a call to create the CoroutineRunner instance. It can be used as in the following.
 ```csharp
 
