@@ -11,5 +11,9 @@
 	"author": {
 		"name": "Ian Pilipski",
 		"url": "http://github.com/ianpilipski"
+	},
+
+	"dependencies": {
+		"com.iptech.coroutines": "1.0.0"
 	}
 }
