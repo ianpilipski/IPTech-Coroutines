@@ -1,4 +1,4 @@
-﻿/*
+/*
 	IPTech.Coroutines is a coroutine and debug visualizer library
 
     Copyright (C) 2019  Ian Pilipski
