@@ -1,0 +1,12 @@
+{
+    "name": "IPTech.Coroutines.Editor",
+    "references": [
+        "IPTech.Coroutines"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

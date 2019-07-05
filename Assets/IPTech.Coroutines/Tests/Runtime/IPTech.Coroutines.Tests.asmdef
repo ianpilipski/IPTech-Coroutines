@@ -1,0 +1,12 @@
+{
+    "name": "IPTech.Coroutines.Tests",
+    "references": [
+        "IPTech.Coroutines"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
