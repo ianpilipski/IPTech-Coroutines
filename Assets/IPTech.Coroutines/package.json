@@ -1,18 +1,21 @@
 {
 	"name": "com.iptech.coroutines",
-	"version": "1.0.0",
-
+	"version": "1.0.1",
 	"displayName": "IPTech.Coroutines",
 	"description": "A coroutine library that allows error handling and debug visualization",
 	"unity": "2018.1",
-
-	"keywords": [ "coroutine", "iptech", "visualization", "debug", "unity3d", "c#" ],
-
+	"keywords": [
+		"coroutine",
+		"iptech",
+		"visualization",
+		"debug",
+		"unity3d",
+		"c#"
+	],
 	"author": {
 		"name": "Ian Pilipski",
 		"url": "http://github.com/ianpilipski"
 	},
-
 	"dependencies": {
 		"com.iptech.nsubstitute": "1.0.0"
 	}
