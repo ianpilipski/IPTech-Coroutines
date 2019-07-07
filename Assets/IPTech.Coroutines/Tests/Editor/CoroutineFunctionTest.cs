@@ -44,15 +44,18 @@ namespace CoroutineFunctionTests {
 			Assert.GreaterOrEqual(ci.TotalSeconds, 2);
 		}
 
+#if !UNITY_2018_3_OR_NEWER
 		[Test]
 		public void WWW_RunsToCompletion() {
 			CallInfo ci = new CallInfo();
+			
 			CFunc coroutineUnderTest = new CFunc(RoutineYield(ci, () => new WWW("http://httpbin.org/get?hello")));
 
 			CallMoveNextUntilCoroutineCompletes(coroutineUnderTest, 10);
 
 			Assert.IsTrue(ci.LastLineHit);
 		}
+#endif
 
 		[Test]
 		public void AsyncOperation_RunsToCompletion() {

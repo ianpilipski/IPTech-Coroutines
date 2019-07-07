@@ -1,9 +1,9 @@
 {
 	"name": "com.iptech.coroutines",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"displayName": "IPTech.Coroutines",
 	"description": "A coroutine library that allows error handling and debug visualization",
-	"unity": "2018.1",
+	"unity": "2018.3",
 	"keywords": [
 		"coroutine",
 		"iptech",
@@ -17,6 +17,6 @@
 		"url": "http://github.com/ianpilipski"
 	},
 	"dependencies": {
-		"com.iptech.nsubstitute": "1.0.0"
+		"com.iptech.nsubstitute": "1.0.1"
 	}
 }

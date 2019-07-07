@@ -67,10 +67,11 @@ namespace IPTech.Coroutines {
                 return i++ > 10;
             });
 
-            Debug.Log("I'm waiting on an WWW request!");
+#if !UNITY_2018_3_OR_NEWER
+			Debug.Log("I'm waiting on an WWW request!");
             WWW www = new WWW("http://httpbin.org/get");
             yield return www;
-
+#endif
             Debug.Log("I'm waiting on an async op!");
             ResourceRequest rr = Resources.LoadAsync<Object>("MyAsyncLoadObject");
             yield return rr;

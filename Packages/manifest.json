@@ -4,13 +4,12 @@
       "name": "IPTech",
       "url": "https://registry.npmjs.com",
       "scopes": [
-        "com.iptech",
-        "iptech"
+        "com.iptech"
       ]
     }
   ],
   "dependencies": {
-    "com.iptech.nsubstitute": "1.0.0",
+    "com.iptech.nsubstitute": "1.0.1",
     "com.unity.package-manager-ui": "2.0.3",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

@@ -22,14 +22,17 @@ namespace IPTech.Coroutines {
 			readonly DateTime timeoutTime;
 
 			public WaitForSecondsRealtimeWrapper(WaitForSecondsRealtime waitForSeconds) {
+#if UNITY_2018_3_OR_NEWER
+				float seconds = waitForSeconds.waitTime;
+#else
 				FieldInfo fi = waitForSeconds.GetType().GetField("waitTime", BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.Instance);
 				float waitTime = (float)fi.GetValue(waitForSeconds);
 				float seconds = waitTime - Time.realtimeSinceStartup;
-
+#endif
 				timeoutTime = DateTime.Now.AddSeconds(seconds);
 			}
 
-            #region IEnumerator implementation
+#region IEnumerator implementation
 
             public bool MoveNext() {
 				return DateTime.Now < timeoutTime;
@@ -43,7 +46,7 @@ namespace IPTech.Coroutines {
                 }
             }
 
-            #endregion
+#endregion
         }
     }
 }

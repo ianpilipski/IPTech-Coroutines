@@ -1,10 +1,10 @@
-{
+﻿{
 	"name": "com.iptech.coroutines.examples",
-	"version": "1.0.0",
+	"version": "1.0.2",
 
 	"displayName": "IPTech.Coroutines.Examples",
 	"description": "Examples for IPTech.Coroutines library",
-	"unity": "2018.1",
+	"unity": "2018.3",
 
 	"keywords": [ "coroutine", "iptech", "visualization", "debug" ],
 
