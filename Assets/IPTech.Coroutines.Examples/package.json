@@ -1,6 +1,6 @@
 ﻿{
 	"name": "com.iptech.coroutines.examples",
-	"version": "1.0.2",
+	"version": "1.1.0",
 
 	"displayName": "IPTech.Coroutines.Examples",
 	"description": "Examples for IPTech.Coroutines library",
