@@ -11,10 +11,11 @@ mkdir $UNITY_BUILD_DIR
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -nographics \
+  -force-free \
   -silent-crashes \
   -logFile \
   -projectPath "$PROJECT_PATH" \
-  -runEditorTests
+  -runEditorTests \
   | tee "$LOG_FILE"
   
 if [ $? = 0 ] ; then
