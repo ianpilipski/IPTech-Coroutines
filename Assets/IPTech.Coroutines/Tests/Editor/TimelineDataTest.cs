@@ -85,12 +85,17 @@ namespace InsightsTests {
 
 		[Test]
 		public void ParentRelationshipIsUpdated() {
-			Assume.That(false);
-		}
+			ICFunc routineA = CreateRoutine("A");
+			ICFunc routineB = CreateRoutine("B");
+			ITimelineEntry a = timelineDataUnderTest.Add(routineA);
+			ITimelineEntry b = timelineDataUnderTest.Add(routineB);
+			routineB.IsUpdatedBy(Arg.Is<object>(routineA)).Returns(true);
+			routineB.HasUpdater.Returns(true);
+			Assume.That(b.Parent == null);
 
-		[Test]
-		public void UpdateIsCalledOnRootEntries() {
-			Assume.That(false);
+			timelineDataUnderTest.Update();
+
+			Assert.AreSame(a, b.Parent);
 		}
 	}
 
