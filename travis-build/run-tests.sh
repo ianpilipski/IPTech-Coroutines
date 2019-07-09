@@ -3,7 +3,7 @@
 PROJECT_PATH=$(pwd)/$UNITY_PROJECT_PATH
 UNITY_BUILD_DIR=$(pwd)/Build
 LOG_FILE=$UNITY_BUILD_DIR/unity-test.log
-
+TEST_RESULT_FILE=$UNITY_BUILD_DIR/unity-test-results.xml
 
 ERROR_CODE=0
 echo "Running unity editor tests..."
@@ -15,7 +15,10 @@ mkdir $UNITY_BUILD_DIR
   -silent-crashes \
   -logFile \
   -projectPath "$PROJECT_PATH" \
+  -editorTestsResultFile "$TEST_RESULT_FILE" \
   -runEditorTests \
+  -username "$UNAME" \
+  -password "$UPASS" \
   | tee "$LOG_FILE"
   
 if [ $? = 0 ] ; then
