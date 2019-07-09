@@ -29,5 +29,7 @@ else
   ERROR_CODE=1
 fi
 
+/Applications/Unity/Unity.app/Contents/MacOS/Unity -quit -batchmode -returnlicense
+
 echo "Finishing with code $ERROR_CODE"
 exit $ERROR_CODE
