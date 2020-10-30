@@ -5,7 +5,7 @@ name: Publish Release to NPM
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
