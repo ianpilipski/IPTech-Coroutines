@@ -13,7 +13,7 @@ env:
 
 jobs:
   test:
-    name: Test in ${{ matrix.testMode }} on version ${{ matrix.unityVersion }}
+    name: Test version ${{ matrix.unityVersion }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:
@@ -23,6 +23,7 @@ jobs:
           - IPTech-Coroutines
         unityVersion:
           - 2018.3.14f1
+          - 2019.4.12f1
         testMode:
           - all
     steps:
