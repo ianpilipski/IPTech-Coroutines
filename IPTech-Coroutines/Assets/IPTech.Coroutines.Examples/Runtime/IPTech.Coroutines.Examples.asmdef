@@ -4,9 +4,11 @@
         "IPTech.Coroutines"
     ],
     "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
 }
