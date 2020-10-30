@@ -23,8 +23,7 @@ jobs:
         unityVersion:
           - 2018.3.14f1
         testMode:
-          - playmode
-          - editmode
+          - all
     steps:
       - uses: actions/checkout@v2
         with:
