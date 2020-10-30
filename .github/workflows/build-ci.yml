@@ -10,7 +10,6 @@ on:
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-  UNITY_VERSIONS: '[ "2018.3.14f1" ]'
 
 jobs:
   test:
@@ -22,7 +21,8 @@ jobs:
       matrix:
         projectPath:
           - IPTech-Coroutines
-        unityVersion: ${{ fromJSON(env.UNITY_VERSIONS) }}
+        unityVersion:
+          - 2018.3.14f1
         testMode:
           - all
     steps:
