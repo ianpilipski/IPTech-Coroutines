@@ -46,8 +46,11 @@ namespace IPTech.Coroutines {
             Debug.Log("I'm waiting for 5 seconds!");
             yield return new WaitForSeconds(5F);
 
-            Debug.Log("I'm waiting until the end of frame");
-            yield return new WaitForEndOfFrame();
+            if (!UnityEditorInternal.InternalEditorUtility.inBatchMode) {
+                //This test doesn't seem to work in batchmode and headless on linux
+                Debug.Log("I'm waiting until the end of frame");
+                yield return new WaitForEndOfFrame();
+            }
 
             Debug.Log("I'm waiting for fixed update!");
             yield return new WaitForFixedUpdate();
