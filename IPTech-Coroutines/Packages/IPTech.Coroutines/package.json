@@ -14,7 +14,7 @@
 	],
 	"author": {
 		"name": "Ian Pilipski",
-		"url": "https://github.com/ianpilipski/IPTech-Coroutines"
+		"url": "https://github.com/ianpilipski/IPTech-Coroutines.git"
 	},
 	"dependencies": {
 		"com.iptech.nsubstitute": "1.0.1"

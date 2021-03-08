@@ -32,6 +32,11 @@ function update_readme_settings() {
   cp ./IPTech-Coroutines/Packages/IPTech.Coroutines/README.md README.md
 }
 
+function update_changelog_settings() {
+  echo Updating version in ChangeLog
+  sed -i '' "s/\## X\.X\.X/## $VERSION/" ./IPTech-Coroutines/Packages/IPTech.Coroutines/CHANGELOG.md
+}
+
 check_for_valid_arguments
 update_project_settings
 update_package_settings
