@@ -1,12 +1,22 @@
 {
     "name": "IPTech.Coroutines.Tests",
     "references": [
-        "IPTech.Coroutines"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
+        "IPTech.Coroutines",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
