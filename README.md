@@ -24,7 +24,7 @@ Packages/manifest.json
     }
   ],
   "dependencies": {
-    "com.iptech.coroutines": "1.1.2"
+    "com.iptech.coroutines": "2.0.0"
   }
 }
 ```
