@@ -23,6 +23,7 @@ jobs:
           - IPTech-Coroutines
         unityVersion:
           - 2018.3.14f1
+          - 2018.4.32f1
         testMode:
           - all
     steps:

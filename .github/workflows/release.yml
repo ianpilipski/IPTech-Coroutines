@@ -14,6 +14,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        unityVersion:
+          - 2018.3.14f1
+          - 2018.4.32f1
     steps:
       - uses: actions/checkout@v2
         with:
@@ -28,7 +34,7 @@ jobs:
         id: tests
         with:
           projectPath: IPTech-Coroutines
-          unityVersion: 2018.3.14f1
+          unityVersion: ${{ matrix.unityVersion }}
           testMode: all
           artifactsPath: all-artifacts
       - uses: actions/upload-artifact@v1
@@ -53,7 +59,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm publish --access public
-        working-directory: ./IPTech-Coroutines/Assets/${{ matrix.packageName }}
+        working-directory: ./IPTech-Coroutines/Packages/${{ matrix.packageName }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
