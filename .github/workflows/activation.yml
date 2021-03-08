@@ -10,7 +10,7 @@ jobs:
     # Request manual activation file
     - name: Request manual activation file
       id: getManualLicenseFile
-      uses: webbertakken/unity-request-manual-activation-file@v1.1
+      uses: game-ci/unity-request-manual-activation-file@v2
       with:
         unityVersion: 2018.3.14f1
 
