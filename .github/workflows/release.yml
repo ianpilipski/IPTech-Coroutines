@@ -30,13 +30,14 @@ jobs:
           key: Library-IPTech-Coroutines
           restore-keys: |
             Library-
-      - uses: webbertakken/unity-test-runner@v1.7
+      - uses: game-ci/unity-test-runner@v2
         id: tests
         with:
           projectPath: IPTech-Coroutines
           unityVersion: ${{ matrix.unityVersion }}
           testMode: all
           artifactsPath: all-artifacts
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v1
         with:
           name: Test results for all
