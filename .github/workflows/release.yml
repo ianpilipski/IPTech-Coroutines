@@ -27,9 +27,7 @@ jobs:
       - uses: actions/cache@v1.1.0
         with:
           path: IPTech-Coroutines/Library
-          key: Library-IPTech-Coroutines
-          restore-keys: |
-            Library-
+          key: Library-IPTech-Coroutines-${{ matrix.unityVersion }}
       - uses: game-ci/unity-test-runner@v2
         id: tests
         with:
