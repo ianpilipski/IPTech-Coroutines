@@ -1,29 +1,29 @@
 {
-	"name": "com.iptech.coroutines",
-	"version": "2.0.0",
-	"displayName": "IPTech.Coroutines",
-	"description": "A coroutine library that allows error handling and debug visualization",
-	"unity": "2019.4",
-	"keywords": [
-		"coroutine",
-		"iptech",
-		"visualization",
-		"debug",
-		"unity3d",
-		"c#"
-	],
-	"author": {
-		"name": "Ian Pilipski",
-		"url": "https://github.com/ianpilipski/IPTech-Coroutines.git"
-	},
-	"dependencies": {
-		"com.iptech.nsubstitute": "1.0.1"
-	},
-	"samples": [
-		{
-			"displayName": "Examples",
-			"description": "Coroutine library examples",
-			"path": "Samples~/IPTech.Coroutines.Examples"
-		}
-	]
+  "name": "com.iptech.coroutines",
+  "version": "2.0.0",
+  "displayName": "IPTech.Coroutines",
+  "description": "A coroutine library that allows error handling and debug visualization",
+  "unity": "2019.4",
+  "keywords": [
+    "coroutine",
+    "iptech",
+    "visualization",
+    "debug",
+    "unity3d",
+    "c#"
+  ],
+  "author": {
+    "name": "Ian Pilipski",
+    "url": "https://github.com/ianpilipski/IPTech-Coroutines.git"
+  },
+  "dependencies": {
+    "com.iptech.nsubstitute": "2.0.3"
+  },
+  "samples": [
+    {
+      "displayName": "Examples",
+      "description": "Coroutine library examples",
+      "path": "Samples~/IPTech.Coroutines.Examples"
+    }
+  ]
 }

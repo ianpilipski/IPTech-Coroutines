@@ -12,7 +12,6 @@
 
 using System;
 using System.Collections;
-using NSubstitute;
 using NUnit.Framework;
 using UnityEngine.TestTools;
 
@@ -33,11 +32,45 @@ namespace IPTech.Coroutines {
 
 			moveNextCallCount = 0;
 			mockTickGroup = ETickGroup.Update;
-			mockCoroutine = Substitute.For<ICFunc>();
-			mockCoroutine.MoveNext().Returns(ci => {
-				return moveNextCallCount++ < 10;
-			});
-			mockCoroutine.TickGroup.Returns(mockTickGroup);
+			mockCoroutine = new MockCoroutine(this);
+		}
+
+		public class MockCoroutine : ICFunc {
+			TestCoroutineRunnerPlayMode runner;
+
+			public MockCoroutine(TestCoroutineRunnerPlayMode runner) {
+				this.runner = runner;
+			}
+
+			public bool IsDone => false;
+
+			public Exception Error => null;
+
+			public bool HasUpdater => false;
+
+			public ETickGroup TickGroup => runner.mockTickGroup;
+
+			public string FunctionName => "testfunc";
+
+			public DateTime LastUpdated => DateTime.Now;
+
+			public object Current => null;
+
+			public bool IsUpdatedBy(object obj) {
+				return false;
+			}
+
+			public bool MoveNext() {
+				return runner.moveNextCallCount++ < 10;
+			}
+
+			public void RegisterUpdater(object runner) {
+				
+			}
+
+			public void Reset() {
+				
+			}
 		}
 
 		[TearDown]

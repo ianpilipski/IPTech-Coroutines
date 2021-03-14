@@ -5,12 +5,12 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.iptech.nsubstitute": "1.0.1"
+        "com.iptech.nsubstitute": "2.0.3"
       }
     },
     "com.iptech.nsubstitute": {
-      "version": "1.0.1",
-      "depth": 0,
+      "version": "2.0.3",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.npmjs.com"
