@@ -17,7 +17,7 @@
     "url": "https://github.com/ianpilipski/IPTech-Coroutines.git"
   },
   "dependencies": {
-    "com.iptech.nsubstitute": "2.0.3"
+    "com.iptech.nsubstitute": "2.0.4"
   },
   "samples": [
     {
