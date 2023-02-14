@@ -1,4 +1,10 @@
 
+# DEPRECATED
+
+THIS REPOSITORY HAS BEEN ROLLED INTO [IPTech-UnityLibrary](https://github.com/ianpilipski/IPTech-UnityLibrary.git)  
+
+Any further development will be done there.
+
 # IPTech.Coroutines
 
 A Unity library for coroutines that provides:
